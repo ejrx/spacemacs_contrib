@@ -7,7 +7,7 @@ A collection of my personal spacemacs layers
 - [[#license][License]]
 
 * Hy
-Adds support for the [Hy](http://hylang.org) lisp dialect. 
+Adds support for the [[http://hylang.org][Hy]] lisp dialect. 
 
 * Install
 ** All layers
