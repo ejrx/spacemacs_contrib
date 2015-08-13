@@ -1,0 +1,32 @@
+#+TITLE: Spacemacs Layers
+A collection of my personal spacemacs layers
+
+* Table of Contents
+- [[#hy][Hy Layer]]
+- [[#install][Installation]]
+- [[#license][License]]
+
+* Hy
+Adds support for the [Hy](http://hylang.org) lisp dialect. 
+
+* Install
+** All layers
+To install all the layers in this repository, clone this directory into your =~/.emacs.d/private= directory.
+
+#+BEGIN_SRC shell
+git clone https://github.com/ejrx/spacemacs_layers ~/.emacs.d/private/
+#+END_SRC
+
+** Individual layers
+The easiest way to install an individual layer is to clone this repository and then symlink the layer you want to install. 
+
+For example, to only install the =Hy= layer:
+
+#+BEGIN_SRC shell
+git clone https://github.com/ejrx/spacemacs_layers
+ln -s /abs/path/spacemacs_layers/hy ~/.emacs.d/private/hy
+#+END_SRC shell
+
+* License
+All layers are licensed under the [[http://gnu.org/licenses/gpl-3.0.en.html][GNU General Public License]].
+See the =LICENSE= file for the full license text.

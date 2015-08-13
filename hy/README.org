@@ -1,0 +1,41 @@
+#+TITLE: Hy language contribution layer for Spacemacs
+
+[[file:img/hy-logo.png]]
+
+* Table of Contents
+- [[#description][Description]]
+- [[#install][Install]]
+- [[#key-bindings][Key Bindings]]
+
+* Description
+This layer adds support for the [[http://hylang.org][Hy]] language.
+In addition to syntax highlighting, this layer also incorporates =paredit-mode=.
+
+* Install
+
+** Layer Installation
+To use this layer, add the path to the parent directory of this folder to your =dotspacemacs-configuration-layer-path=.
+
+In =~/.spacemacs=: 
+
+#+BEGIN_SRC emacs-lisp
+(setq-default dotspacemacs-configuration-layer-path
+ '(
+   `/path/to/parentdir/'
+  ))
+#+END_SRC
+
+Alternatively, you can copy/symlink this folder to your =~/.emacs.d/private= directory.
+
+** Configuring the Hy Interpreter
+=Hy-mode= requires the "hy" repl to be in the $PATH for the =*inferior-lisp*= commands to work.
+To add the REPL to your path, add the following line to your =~/.bash_profile=: 
+
+#+BEGIN_SRC shell
+export PATH=/path/to/hy:$PATH
+#+END_SRC 
+
+* Key Bindings
+To launch a Hy REPL: =M x run-lisp=
+
+See the default keybindings for [[http://github.com/hylang/hy-mode][hy-mode]].
